@@ -2,7 +2,7 @@ const isPrime = num => {
   if(num < 2){
     return false
   }
-  for(let i =2; i < num; i++){
+  for(let i =2; i < Math.sqrt(num); i++){
      if (num%i === 0) {
         return false
      }
@@ -10,4 +10,4 @@ const isPrime = num => {
   return true
 }
 
-console.log(isPrime(50)) 
+console.log(isPrime(37)) 
